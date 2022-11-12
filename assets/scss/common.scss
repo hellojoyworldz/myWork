@@ -1,0 +1,238 @@
+@charset "UTF-8";
+
+@import 'variable.scss';
+
+/* common */
+.skipToMain {
+    display: block;
+    margin-bottom: -1px;
+    height: 1px;
+    text-align: center;
+    overflow: hidden;
+
+    &:focus{
+        height: auto;
+        margin-bottom: 0;
+    }
+}
+
+.screenHide {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    line-height: 1px;
+    border: 0;
+    clip: rect(1px, 1px, 1px 1px);
+    overflow: hidden;
+}
+
+.in {
+    width: $in;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* header */
+.header{
+    position: relative;
+    margin: $lyMargin;
+    padding: $lyPadding;
+    background: $bgColItem;
+    border-radius: 36px;
+    box-sizing: border-box;
+
+    &__logo{
+        margin-bottom: 128px;
+        font-size: $titSizFir;
+        color: $fontColFir;
+    }
+
+    &__desc{
+        .item{
+            padding-top: 4px;
+            font-size: $txtSizeLv1;
+            color: $fontColSec;
+        }
+    }
+}
+
+.gnb{
+    position: absolute;
+    top: $lyPadding;
+    left: 50%;
+    &__list{
+
+    }
+
+    &__item{
+        position: relative;
+        margin: 16px 0;
+        font-size: $txtSizeLv1;
+        line-height: 1em;
+        color: $fontColFir; 
+    }
+
+    &__link{
+        display: inline-block;
+        padding-left: 36px;
+        font-size: inherit;
+        color: inherit;
+
+        &::before{
+            content:'';
+            position: absolute;
+            top: -4px;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: $colPoint1;
+            border-radius: 50%;
+        }
+    }
+}
+
+/* footer */
+.footer{
+    margin: $lyMargin;
+    padding: $lyPadding;
+    padding-top: 128px;
+    background: $bgColItem;
+    border-radius: $lyRadius;
+
+    &__info{
+        .item{
+            display: block;
+            font-size: $txtSizeLv2;
+            color: $fontColSec;
+        }
+    }
+}
+
+/* main layout */
+.ly-main__section{
+    margin: $lyMargin;
+}
+
+/* card list layout */
+.ly-card__list--type01{
+    .card{
+        
+        &__list{
+            display: grid;
+            gap: $lyMargin;
+            grid-template-rows: repeat(2, minmax(0px, 1fr));
+            grid-template-columns: repeat(4, minmax(50px, 1fr));
+        }
+
+        &__item{
+            position: relative;
+            grid-area: auto / auto / span 2 / span 2;
+            place-self: start;
+            padding: $lyPadding;
+            width: 100%;
+            height: 100%;
+            background: $bgColItem;
+            border-radius: $lyRadius;
+            box-sizing: border-box;
+        }
+
+        &__header{
+            min-height: 64px;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid $greyDdd;
+        }
+
+        &__body{
+
+        }
+
+        &__footer{
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid $greyDdd;
+        }
+
+        &__tit{
+            display: block;
+            font-size: $titSizSec;
+            color: $fontColFir;
+        }
+
+        &__date{
+            display: block;
+            font-size: $txtSizeLv2;
+            color: $fontColThi;
+        }
+
+        &__view{
+            position: absolute;
+            top: $lyPadding;
+            right: $lyPadding;
+            display: block;
+            width: 64px;
+            height: 64px;
+            text-indent: -999999px;
+            background: $whiteFff url(../img/ico--more.svg) no-repeat 50% 50%;
+            background-size: 32px 32px;
+            border: 4px solid $greyDdd;
+            border-radius: 50%;
+            transition: background-color .2s,border-color .2s,box-shadow .2s;
+            box-sizing: border-box;
+            z-index: 1;
+
+            &Link{
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+
+            &::before{
+                content:'';
+                display:none;
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.9);
+                z-index: -1;
+            }
+
+            
+        }
+
+        &__thumb{
+            display: block;
+            &Img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        &__type{
+            &Link{
+                display: inline-block; 
+                padding: 12px 24px;
+                font-size: $fontSizLv4;
+                line-height: 1em;
+                color: $fontColSec;
+                background: $whiteFff;
+                border-radius: $lyRadius;
+                &.type--response{
+
+                }
+                &.type--desktop{
+
+                }
+                &.type--mobile{
+
+                }
+            } 
+        }
+        
+        
+    }
+    
+}
