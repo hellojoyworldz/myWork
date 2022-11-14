@@ -49,9 +49,19 @@
 
     &__desc{
         .item{
-            padding-top: 4px;
+            position: relative;
+            margin-top: 4px;
+            padding-left: 24px;
             font-size: $txtSizeLv1;
             color: $fontColSec;
+            
+            &::before{
+                content:'✓ ';
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+                color: $colPoint1;
+            }
         }
     }
 }
@@ -74,18 +84,18 @@
 
     &__link{
         display: inline-block;
-        padding-left: 36px;
+        margin-left: 24px;
         font-size: inherit;
         color: inherit;
 
         &::before{
             content:'';
             position: absolute;
-            top: -4px;
             left: 0;
-            width: 24px;
-            height: 24px;
-            background: $colPoint1;
+            width: 16px;
+            height: 16px;
+            background: $colPoint1 url(../img/ico--more.svg) no-repeat 50% 50%;
+            background-size: 12px 12px;
             border-radius: 50%;
         }
     }
@@ -100,8 +110,19 @@
     border-radius: $lyRadius;
 
     &__info{
+        margin-top:$lyMargin;
         .item{
             display: block;
+            font-size: $txtSizeLv2;
+            color: $fontColSec;
+        }
+    }
+
+    &__copy{
+        display: flex;
+        justify-content: space-between;
+        margin-top:$lyMargin;
+        .item{
             font-size: $txtSizeLv2;
             color: $fontColSec;
         }
@@ -197,9 +218,7 @@
                 left: 0;
                 background-color: rgba(255, 255, 255, 0.9);
                 z-index: -1;
-            }
-
-            
+            }   
         }
 
         &__thumb{
@@ -213,13 +232,24 @@
         
         &__type{
             &Link{
-                display: inline-block; 
-                padding: 12px 24px;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 12px 16px;
                 font-size: $fontSizLv4;
                 line-height: 1em;
                 color: $fontColSec;
                 background: $whiteFff;
                 border-radius: $lyRadius;
+                &::after{
+                    content:'';
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 4px;
+                    width: 24px;
+                    height: 24px;
+                    background: $bgColItem url(../img/ico--more.svg) no-repeat 50% 50% / 16px 16px;
+                    border-radius: 50%;
+                }    
                 &.type--response{
 
                 }
@@ -230,9 +260,6 @@
 
                 }
             } 
-        }
-        
-        
-    }
-    
+        } 
+    } 
 }

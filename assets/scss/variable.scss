@@ -19,9 +19,18 @@ $txtSizeLv2 : $fontSizLv4 ;
 $txtSizeLv3 : $fontSizLv5;
 $txtSizeLv4 : $fontSizLv6;
 
-$lineH100 : 100%;
-$lineH120 : 120%;
-$lineH150 : 150%;
+
+$lineHei150 : 150%;
+$lineHei140 : 140%; 
+$lineHei130 : 130%; 
+$lineHei120 : 120%; 
+$lineHei110 : 110%; 
+$lineHei100 : 100%; 
+$lineHeiLv0 : $lineHei100;
+$lineHeiLv1 : $lineHei150;
+$lineHeiLv2 : $lineHei140;
+$lineHeiLv3 : $lineHei120;
+
 
 $black111 : #111;
 $black222 : #222;

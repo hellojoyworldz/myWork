@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import 'variable';
-@import 'fonts';
+@import "variable";
+@import "fonts";
 
 //:lang(ko) {
 //    font-family: 'IBM Plex Sans KR', 'Montserrat', system-ui, -apple-system, 'Malgun Gothic', sans-serif;
@@ -12,20 +12,45 @@
 //    font-family: 'Montserrat', system-ui, -apple-system, 'Malgun Gothic', sans-serif;
 //}
 body {
-    max-width: 100%;
     width: 100%;
-    font-family:  $fontEn, $fontKo, system-ui, -apple-system, 'Malgun Gothic', sans-serif;
-    word-break: keep-all;  
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: $fontEn, $fontKo, system-ui, -apple-system, "Malgun Gothic", sans-serif;
+    word-break: keep-all;
     overflow-x: hidden;
 }
 
-html, body, 
-blockquote, hr, iframe,
-h1, h2, h3, h4, h5, h6,
-table, th, td, figure,
-form, fieldset, legend, label, input, select, textarea, button,
-ul, ol, li, dl, dt, dd,
-p, pre{
+html,
+body,
+blockquote,
+hr,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+th,
+td,
+figure,
+form,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+pre {
     margin: 0;
     padding: 0;
 }
@@ -38,7 +63,8 @@ a {
 //img {
 //    max-width: 100%;
 //}
-ol, ul {
+ol,
+ul {
     list-style: none;
 }
 
@@ -52,15 +78,20 @@ button {
     cursor: pointer;
 }
 
-button, input, table, textarea{
+button,
+input,
+table,
+textarea {
     font-family: inherit;
     border: 0;
 }
 
-fieldset, iframe{
+fieldset,
+iframe {
     border: 0;
 }
 
-address, em {
+address,
+em {
     font-style: normal;
 }
