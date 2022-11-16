@@ -10,20 +10,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
+  padding: 0;
   font-family: "Poppins", "Noto Sans KR", system-ui, -apple-system, "Malgun Gothic", sans-serif;
   word-break: keep-all;
   overflow-x: hidden;
 }
 
-html, body,
-blockquote, hr, iframe,
-h1, h2, h3, h4, h5, h6,
-table, th, td, figure, xw form,
-fieldset, legend, label, input, select, textarea, button,
-ul, ol, li, dl, dt, dd,
-p, pre {
+html,
+blockquote,
+hr,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+table,
+th,
+td,
+figure,
+form,
+fieldset,
+legend,
+label,
+input,
+select,
+textarea,
+button,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+pre {
   margin: 0;
   padding: 0;
 }
@@ -33,7 +56,8 @@ a {
   text-decoration: none;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -47,15 +71,20 @@ button {
   cursor: pointer;
 }
 
-button, input, table, textarea {
+button,
+input,
+table,
+textarea {
   font-family: inherit;
   border: 0;
 }
 
-fieldset, iframe {
+fieldset,
+iframe {
   border: 0;
 }
 
-address, em {
+address,
+em {
   font-style: normal;
 }

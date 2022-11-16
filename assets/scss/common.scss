@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import 'variable.scss';
+@import "variable.scss";
 
 /* common */
 .skipToMain {
@@ -10,7 +10,7 @@
     text-align: center;
     overflow: hidden;
 
-    &:focus{
+    &:focus {
         height: auto;
         margin-bottom: 0;
     }
@@ -33,7 +33,7 @@
 }
 
 /* header */
-.header{
+.header {
     position: relative;
     margin: $lyMargin;
     padding: $lyPadding;
@@ -41,22 +41,22 @@
     border-radius: 36px;
     box-sizing: border-box;
 
-    &__logo{
+    &__logo {
         margin-bottom: 128px;
         font-size: $titSizFir;
         color: $fontColFir;
     }
 
-    &__desc{
-        .item{
+    &__desc {
+        .item {
             position: relative;
             margin-top: 4px;
             padding-left: 24px;
             font-size: $txtSizeLv1;
             color: $fontColSec;
-            
-            &::before{
-                content:'✓ ';
+
+            &::before {
+                content: "✓ ";
                 position: absolute;
                 left: 0;
                 font-weight: bold;
@@ -66,30 +66,28 @@
     }
 }
 
-.gnb{
+.gnb {
     position: absolute;
     top: $lyPadding;
     left: 50%;
-    &__list{
+    padding-left: $lyPadding;
 
-    }
-
-    &__item{
+    &__item {
         position: relative;
-        margin: 16px 0;
+        margin-top: 16px;
         font-size: $txtSizeLv1;
         line-height: 1em;
-        color: $fontColFir; 
+        color: $fontColFir;
     }
 
-    &__link{
+    &__link {
         display: inline-block;
         margin-left: 24px;
         font-size: inherit;
         color: inherit;
 
-        &::before{
-            content:'';
+        &::before {
+            content: "";
             position: absolute;
             left: 0;
             width: 16px;
@@ -102,27 +100,27 @@
 }
 
 /* footer */
-.footer{
+.footer {
     margin: $lyMargin;
     padding: $lyPadding;
     padding-top: 128px;
     background: $bgColItem;
     border-radius: $lyRadius;
 
-    &__info{
-        margin-top:$lyMargin;
-        .item{
+    &__info {
+        margin-top: $lyMargin;
+        .item {
             display: block;
             font-size: $txtSizeLv2;
             color: $fontColSec;
         }
     }
 
-    &__copy{
+    &__copy {
         display: flex;
         justify-content: space-between;
-        margin-top:$lyMargin;
-        .item{
+        margin-top: $lyMargin;
+        .item {
             font-size: $txtSizeLv2;
             color: $fontColSec;
         }
@@ -130,22 +128,21 @@
 }
 
 /* main layout */
-.ly-main__section{
+.ly-main__section {
     margin: $lyMargin;
 }
 
 /* card list layout */
-.ly-card__list--type01{
-    .card{
-        
-        &__list{
+.ly-card__list--type01 {
+    .card {
+        &__list {
             display: grid;
             gap: $lyMargin;
             grid-template-rows: repeat(2, minmax(0px, 1fr));
             grid-template-columns: repeat(4, minmax(50px, 1fr));
         }
 
-        &__item{
+        &__item {
             position: relative;
             grid-area: auto / auto / span 2 / span 2;
             place-self: start;
@@ -157,36 +154,35 @@
             box-sizing: border-box;
         }
 
-        &__header{
+        &__header {
             min-height: 64px;
             margin-bottom: 24px;
             padding-bottom: 24px;
             border-bottom: 1px solid $greyDdd;
         }
 
-        &__body{
-
+        &__body {
         }
 
-        &__footer{
+        &__footer {
             margin-top: 24px;
             padding-top: 24px;
             border-top: 1px solid $greyDdd;
         }
 
-        &__tit{
+        &__tit {
             display: block;
             font-size: $titSizSec;
             color: $fontColFir;
         }
 
-        &__date{
+        &__date {
             display: block;
             font-size: $txtSizeLv2;
             color: $fontColThi;
         }
 
-        &__view{
+        &__view {
             position: absolute;
             top: $lyPadding;
             right: $lyPadding;
@@ -198,19 +194,19 @@
             background-size: 32px 32px;
             border: 4px solid $greyDdd;
             border-radius: 50%;
-            transition: background-color .2s,border-color .2s,box-shadow .2s;
+            transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
             box-sizing: border-box;
             z-index: 1;
 
-            &Link{
+            &Link {
                 display: block;
                 width: 100%;
                 height: 100%;
             }
 
-            &::before{
-                content:'';
-                display:none;
+            &::before {
+                content: "";
+                display: none;
                 position: fixed;
                 top: 0;
                 right: 0;
@@ -218,20 +214,20 @@
                 left: 0;
                 background-color: rgba(255, 255, 255, 0.9);
                 z-index: -1;
-            }   
+            }
         }
 
-        &__thumb{
+        &__thumb {
             display: block;
-            &Img{
+            &Img {
                 display: block;
                 width: 100%;
                 height: auto;
             }
         }
-        
-        &__type{
-            &Link{
+
+        &__type {
+            &Link {
                 display: inline-block;
                 vertical-align: middle;
                 padding: 12px 16px;
@@ -240,8 +236,8 @@
                 color: $fontColSec;
                 background: $whiteFff;
                 border-radius: $lyRadius;
-                &::after{
-                    content:'';
+                &::after {
+                    content: "";
                     display: inline-block;
                     vertical-align: middle;
                     margin-left: 4px;
@@ -249,17 +245,8 @@
                     height: 24px;
                     background: $bgColItem url(../img/ico--more.svg) no-repeat 50% 50% / 16px 16px;
                     border-radius: 50%;
-                }    
-                &.type--response{
-
                 }
-                &.type--desktop{
-
-                }
-                &.type--mobile{
-
-                }
-            } 
-        } 
-    } 
+            }
+        }
+    }
 }

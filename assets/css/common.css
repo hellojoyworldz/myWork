@@ -61,10 +61,11 @@
   position: absolute;
   top: 36px;
   left: 50%;
+  padding-left: 36px;
 }
 .gnb__item {
   position: relative;
-  margin: 16px 0;
+  margin-top: 16px;
   font-size: 18px;
   line-height: 1em;
   color: #222;
