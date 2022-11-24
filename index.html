@@ -19,26 +19,29 @@
             <p class="item">실무에서 100% 참여한 신규 작업물만 나열하였습니다.</p>
         </div>
         <nav class="gnb">
-            <ul class="gnb__list">
-                <li class="gnb__item"><a href="#!" class="gnb__link">반응형</a></li>
-                <li class="gnb__item"><a href="#!" class="gnb__link">데스크탑</a></li>
-                <li class="gnb__item"><a href="#!" class="gnb__link">모바일</a></li>
-            </ul>
+            <div class="gnb__list js-filters-group js-button-group">
+                <button type="button" data-filter="*" class="gnb__item active" >전체</button>
+                <button type="button" data-filter=".response" class="gnb__item" >반응형</button>
+                <button type="button" data-filter=".desktop" class="gnb__item" >데스크탑</button>
+                <button type="button" data-filter=".mobile" class="gnb__item" >모바일</button>
+            </div>
         </nav>
     </header>
 
     <main class="main">
-        <section class="ly-main__section ly-card__list--type01">
+        <section class="card__list--type01">
             <h2 class="screenHide">퍼블리싱 작업물 리스트</h2>
-            <ul class="card__list">
-                <li class="card__item">
+            <ul class="card__list js-list">
+                <li class="card__item js-item response" data-category="response">
                     <div class="card__header">
                         <strong class="card__tit">장수마을 일맥의료단</strong>
                         <span class="card__date">2021.03.04 ~ 2022.04.05</span>
                         <a href="#" class="card__view">바로가기</a>
                     </div>
                     <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="860" height="1200" alt=""></span>
+                        <a href="" class="card__thumb">
+                            <img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="1240" height="874" alt="">
+                        </a>
                     </div>
                     <div class="card__footer">
                         <div class="card__type">
@@ -48,14 +51,16 @@
                         </div>
                     </div>
                 </li>
-                <li class="card__item">
+                <li class="card__item js-item desktop mobile" data-category="desktop">
                     <div class="card__header">
                         <strong class="card__tit">장수마을 일맥의료단</strong>
                         <span class="card__date">2021.03.04 ~ 2022.04.05</span>
                         <span class="card__view"><a href="#" class="card__viewLink">바로가기</a></span>
                     </div>
                     <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="860" height="1200" alt=""></span>
+                        <a href="" class="card__thumb">
+                            <img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="1240" height="874" alt="">
+                        </a>
                     </div>
                     <div class="card__footer">
                         <div class="card__type">
@@ -65,14 +70,14 @@
                         </div>
                     </div>
                 </li>
-                <li class="card__item">
+                <li class="card__item js-item desktop" data-category="desktop">
                     <div class="card__header">
                         <strong class="card__tit">장수마을 일맥의료단</strong>
                         <span class="card__date">2021.03.04 ~ 2022.04.05</span>
                         <a href="#" class="card__view">바로가기</a>
                     </div>
                     <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="860" height="1200" alt=""></span>
+                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="1240" height="874" alt=""></span>
                     </div>
                     <div class="card__footer">
                         <div class="card__type">
@@ -82,14 +87,14 @@
                         </div>
                     </div>
                 </li>
-                <li class="card__item">
+                <li class="card__item js-item mobile" data-category="mobile">
                     <div class="card__header">
                         <strong class="card__tit">장수마을 일맥의료단</strong>
                         <span class="card__date">2021.03.04 ~ 2022.04.05</span>
                         <span class="card__view"><a href="#" class="card__viewLink">바로가기</a></span>
                     </div>
                     <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="860" height="1200" alt=""></span>
+                        <a href=""  class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="1240" height="874" alt=""></a>
                     </div>
                     <div class="card__footer">
                         <div class="card__type">
@@ -99,14 +104,14 @@
                         </div>
                     </div>
                 </li>
-                <li class="card__item">
+                <li class="card__item js-item response" data-category="response">
                     <div class="card__header">
                         <strong class="card__tit">장수마을 일맥의료단</strong>
                         <span class="card__date">2021.03.04 ~ 2022.04.05</span>
                         <a href="#" class="card__view">바로가기</a>
                     </div>
                     <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="860" height="1200" alt=""></span>
+                        <a href=""  class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="1240" height="874" alt=""></a>
                     </div>
                     <div class="card__footer">
                         <div class="card__type">
@@ -116,14 +121,14 @@
                         </div>
                     </div>
                 </li>
-                <li class="card__item">
+                <li class="card__item js-item response" data-category="response">
                     <div class="card__header">
                         <strong class="card__tit">장수마을 일맥의료단</strong>
                         <span class="card__date">2021.03.04 ~ 2022.04.05</span>
                         <span class="card__view"><a href="#" class="card__viewLink">바로가기</a></span>
                     </div>
                     <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="860" height="1200" alt=""></span>
+                        <a href="" class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="1240" height="874" alt=""></a>
                     </div>
                     <div class="card__footer">
                         <div class="card__type">
@@ -149,5 +154,9 @@
             <span class="item">Made with love in Korea, Seoul</span>
         </div>
     </footer>
+
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/global.js"></script>
+
 </body>
 </html>
