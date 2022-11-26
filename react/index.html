@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>개발 사이트 | 곽선아</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="./../assets/css/reset.css">
-    <link rel="stylesheet" href="./../assets/css/common.css">
-    <link rel="stylesheet" href="./../assets/css/response.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/response.css">
 </head>
 <body>
     <header class="header">
@@ -19,116 +19,69 @@
             <p class="item">실질적인 작업 기간은 1-5일 이내입니다.</p>
             <p class="item">실무에서 100% 참여한 신규 작업물만 나열하였습니다.</p>
         </div>
-        -->
+    -->
+
         <nav class="gnb">
-            <ul class="gnb__list">
-                <li class="gnb__item"><a href="#!" class="gnb__link">All</a></li>
-                <li class="gnb__item"><a href="#!" class="gnb__link">React</a></li>
-                <li class="gnb__item"><a href="#!" class="gnb__link">Vue</a></li>
-                <li class="gnb__item"><a href="#!" class="gnb__link">php</a></li>
+            <ul class="gnb__list js-filters-group js-button-group">
+                <button type="button" data-filter="*" class="gnb__item active" >All</button>
+                <button type="button" data-filter=".react" class="gnb__item" >React</button>
+                <button type="button" data-filter=".vue" class="gnb__item" >Vue</button>
+                <button type="button" data-filter=".php" class="gnb__item" >php</button>
             </ul>
         </nav>
     </header>
 
     <main class="main">
-        <section class="ly-main__section ly-card__list--type01">
+        <section class="main__section card__list--type01">
             <h2 class="screenHide">개발 작업물 리스트</h2>
-            <ul class="card__list">
-                <li class="card__item">
-                    <div class="card__header">
-                        <strong class="card__tit">장수마을 일맥의료단</strong>
-                        <span class="card__date">2021.03.04 ~ 2022.04.05</span>
-                        <a href="#" class="card__view">바로가기</a>
-                    </div>
-                    <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="860" height="1200" alt=""></span>
-                    </div>
-                    
-                </li>
-                <li class="card__item">
-                    <div class="card__header">
-                        <strong class="card__tit">장수마을 일맥의료단</strong>
-                        <span class="card__date">2021.03.04 ~ 2022.04.05</span>
-                        <span class="card__view"><a href="#" class="card__viewLink">바로가기</a></span>
-                    </div>
-                    <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="860" height="1200" alt=""></span>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__type">
-                            <a href="#" class="card__typeLink type--response">반응형</a>
-                            <a href="#" class="card__typeLink type--desktop">데스크탑</a>
-                            <a href="#" class="card__typeLink type--mobile">모바일</a>
+            <ul class="card__list js-list">
+                <li class="card__item js-item react" data-category="react">
+                    <a href="">
+                        <div class="card__header">
+                            <strong class="card__tit">react</strong>
+                            <span class="card__date">2021.03.04 ~ 2022.04.05</span>
+                            <span class="card__view">바로가기</span>
                         </div>
-                    </div>
-                </li>
-                <li class="card__item">
-                    <div class="card__header">
-                        <strong class="card__tit">장수마을 일맥의료단</strong>
-                        <span class="card__date">2021.03.04 ~ 2022.04.05</span>
-                        <a href="#" class="card__view">바로가기</a>
-                    </div>
-                    <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="860" height="1200" alt=""></span>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__type">
-                            <a href="#" class="card__typeLink type--response">반응형</a>
-                            <a href="#" class="card__typeLink type--desktop">데스크탑</a>
-                            <a href="#" class="card__typeLink type--mobile">모바일</a>
+                        <div class="card__body">
+                            <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="1240" height="874" alt=""></span>
                         </div>
-                    </div>
+                    </a>
                 </li>
-                <li class="card__item">
-                    <div class="card__header">
-                        <strong class="card__tit">장수마을 일맥의료단</strong>
-                        <span class="card__date">2021.03.04 ~ 2022.04.05</span>
-                        <span class="card__view"><a href="#" class="card__viewLink">바로가기</a></span>
-                    </div>
-                    <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="860" height="1200" alt=""></span>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__type">
-                            <a href="#" class="card__typeLink type--response">반응형</a>
-                            <a href="#" class="card__typeLink type--desktop">데스크탑</a>
-                            <a href="#" class="card__typeLink type--mobile">모바일</a>
+                <li class="card__item js-item vue" data-category="vue">
+                    <a href="">
+                        <div class="card__header">
+                            <strong class="card__tit">vue</strong>
+                            <span class="card__date">2021.03.04 ~ 2022.04.05</span>
+                            <span class="card__view">바로가기</span>
                         </div>
-                    </div>
+                        <div class="card__body">
+                            <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="1240" height="874" alt=""></span>
+                        </div>
+                    </a>
                 </li>
-                <li class="card__item">
-                    <div class="card__header">
-                        <strong class="card__tit">장수마을 일맥의료단</strong>
-                        <span class="card__date">2021.03.04 ~ 2022.04.05</span>
-                        <a href="#" class="card__view">바로가기</a>
-                    </div>
-                    <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=101" width="860" height="1200" alt=""></span>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__type">
-                            <a href="#" class="card__typeLink type--response">반응형</a>
-                            <a href="#" class="card__typeLink type--desktop">데스크탑</a>
-                            <a href="#" class="card__typeLink type--mobile">모바일</a>
+                <li class="card__item js-item php" data-category="php">
+                    <a href="">
+                        <div class="card__header">
+                            <strong class="card__tit">php</strong>
+                            <span class="card__date">2021.03.04 ~ 2022.04.05</span>
+                            <span class="card__view">바로가기</span>
                         </div>
-                    </div>
+                        <div class="card__body">
+                            <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=103" width="1240" height="874" alt=""></span>
+                        </div>
+                    </a>
                 </li>
-                <li class="card__item">
-                    <div class="card__header">
-                        <strong class="card__tit">장수마을 일맥의료단</strong>
-                        <span class="card__date">2021.03.04 ~ 2022.04.05</span>
-                        <span class="card__view"><a href="#" class="card__viewLink">바로가기</a></span>
-                    </div>
-                    <div class="card__body">
-                        <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=102" width="860" height="1200" alt=""></span>
-                    </div>
-                    <div class="card__footer">
-                        <div class="card__type">
-                            <a href="#" class="card__typeLink type--response">반응형</a>
-                            <a href="#" class="card__typeLink type--desktop">데스크탑</a>
-                            <a href="#" class="card__typeLink type--mobile">모바일</a>
+                <li class="card__item js-item react" data-category="react">
+                    <a href="">
+                        <div class="card__header">
+                            <strong class="card__tit">react2</strong>
+                            <span class="card__date">2021.03.04 ~ 2022.04.05</span>
+                            <span class="card__view">바로가기</span>
                         </div>
-                    </div>
+                        <div class="card__body">
+                            <span class="card__thumb"><img class="card__thumbImg" src="https://source.unsplash.com/random/1240x874?sig=104" width="1240" height="874" alt=""></span>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -146,5 +99,8 @@
             <span class="item">Made with love in Korea, Seoul</span>
         </div>
     </footer>
+
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/global.js"></script>
 </body>
 </html>
