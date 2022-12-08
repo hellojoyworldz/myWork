@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS&CSS 사이트 | 곽선아</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/response.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__logo">Hello 🌈<br/>My JavaScript &<br/>CSS Animation</h1>
+        <!--
+        <div class="header__desc">
+            <p class="item">작업물 완료 기간(사이트 오픈)은 짧게는 1개월 미만, 길게는 6개월 이상입니다.</p>
+            <p class="item">실질적인 작업 기간은 1-5일 이내입니다.</p>
+            <p class="item">실무에서 100% 참여한 신규 작업물만 나열하였습니다.</p>
+        </div>-->
+        <nav class="gnb">
+            <div class="gnb__list js-filters-group js-button-group">
+                <button type="button" data-filter="*" class="gnb__item active" >전체</button>
+                <button type="button" data-filter=".javascript" class="gnb__item" >JavaScript</button>
+                <button type="button" data-filter=".css" class="gnb__item" >CSS</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="card__list--type01">
+            <h2 class="screenHide">작업물 리스트</h2>
+            <ul class="card__list js-list">
+                <li class="card__item js-item js" data-category="js">
+                    <a href="">
+                        <div class="card__header">
+                            <span class="card__cate"><i class="cm-icon cm-icon--js"></i> JavaScript</span>
+                            <strong class="card__tit">Music Player</strong>
+                            <span class="card__view">바로가기</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__thumb">
+                                <img class="card__thumbImg" src="./assets/img/mainSite__js01.jpg" width="960" height="864074" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card__item js-item js" data-category="js">
+                    <a href="">
+                        <div class="card__header">
+                            <span class="card__cate"><i class="cm-icon cm-icon--js"></i> JavaScript</span>
+                            <strong class="card__tit">Tetris Game</strong>
+                            <span class="card__view">바로가기</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__thumb">
+                                <img class="card__thumbImg" src="./assets/img/mainSite__js02.jpg" width="960" height="640" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card__item js-item js" data-category="js">
+                    <a href="">
+                        <div class="card__header">
+                            <span class="card__cate"><i class="cm-icon cm-icon--js"></i> JavaScript</span>
+                            <strong class="card__tit">Memory Game</strong>
+                            <span class="card__view">바로가기</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__thumb">
+                                <img class="card__thumbImg" src="./assets/img/mainSite__js03.jpg" width="960" height="640" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card__item js-item js" data-category="js">
+                    <a href="">
+                        <div class="card__header">
+                            <span class="card__cate"><i class="cm-icon cm-icon--js"></i> JavaScript</span>
+                            <strong class="card__tit">Typing Game</strong>
+                            <span class="card__view">바로가기</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__thumb">
+                                <img class="card__thumbImg" src="./assets/img/mainSite__js04.jpg" width="960" height="640" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card__item js-item js" data-category="js">
+                    <a href="">
+                        <div class="card__header">
+                            <span class="card__cate"><i class="cm-icon cm-icon--js"></i> JavaScript</span>
+                            <strong class="card__tit">Coin flip</strong>
+                            <span class="card__view">바로가기</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__thumb">
+                                <img class="card__thumbImg" src="./assets/img/mainSite__js05.jpg" width="960" height="640" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="card__item js-item js" data-category="js">
+                    <a href="">
+                        <div class="card__header">
+                            <span class="card__cate"><i class="cm-icon cm-icon--js"></i> JavaScript</span>
+                            <strong class="card__tit">Calendar</strong>
+                            <span class="card__view">바로가기</span>
+                        </div>
+                        <div class="card__body">
+                            <div class="card__thumb">
+                                <img class="card__thumbImg" src="./assets/img/mainSite__js06.jpg" width="960" height="640" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="footer__header"></h2>
+        <div></div>
+        <address class="footer__info">
+            <span class="item">hellojoyworldz@gmail.com</span>
+            <span class="item">+82 10 9783 6375</span>
+        </address>
+        <div class="footer__copy">
+            <span class="item">All rights reserved© 2022</span>
+            <span class="item">Made with love in Korea, Seoul</span>
+        </div>
+    </footer>
+
+    <script src="./assets/js/common.js"></script>
+    <script src="./assets/js/global.js"></script>
+
+</body>
+</html>

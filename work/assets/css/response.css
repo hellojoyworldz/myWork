@@ -44,40 +44,48 @@
     font-size: 14px;
   }
   /* main layout */
-  .ly-main__section {
+  .main__section {
     margin: 8px;
   }
   /* card list layout */
-  .ly-card__list--type01 .card__header {
+  .card__list--type01 {
+    margin: 8px;
+  }
+  .card__list--type01 .card__header {
     min-height: auto;
     margin-bottom: 16x;
     padding-bottom: 16px;
   }
-  .ly-card__list--type01 .card__list {
-    gap: 8px;
+  .card__list--type01 .card__list {
+    margin: -8px 0 0;
   }
-  .ly-card__list--type01 .card__item {
-    grid-area: auto/auto/span 4/span 4;
+  .card__list--type01 .card__item {
+    width: 100%;
+    margin: 8px 0;
     padding: 32px;
   }
-  .ly-card__list--type01 .card__tit {
+  .card__list--type01 .card__tit {
     font-size: 20px;
   }
-  .ly-card__list--type01 .card__date {
+  .card__list--type01 .card__date {
     font-size: 14px;
   }
-  .ly-card__list--type01 .card__view {
-    top: 32px;
-    right: 32px;
+  .card__list--type01 .card__view {
     width: 48px;
     height: 48px;
     background-size: 24px 24px;
   }
-  .ly-card__list--type01 .card__typeLink {
+  .card__list--type01 .card__typeLink {
     font-size: 14px;
   }
-  .ly-card__list--type01 .card__footer {
+  .card__list--type01 .card__footer {
     margin-top: 16px;
     padding-top: 16px;
+  }
+}
+@media (max-width: 360px) {
+  /* card list layout */
+  .card__list--type01 .card__view {
+    display: none;
   }
 }
