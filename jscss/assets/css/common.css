@@ -59,7 +59,7 @@
   position: relative;
   margin: 12px;
   padding: 36px;
-  background: #f9f9f9;
+  background: #fffbf5;
   border-radius: 36px;
   box-sizing: border-box;
 }
@@ -80,7 +80,7 @@
   position: absolute;
   left: 0;
   font-weight: bold;
-  color: #eee;
+  color: #ffd69c;
 }
 
 .gnb {
@@ -105,7 +105,7 @@
   left: 0;
   width: 16px;
   height: 16px;
-  background: #eee url(../img/ico--more.svg) no-repeat 50% 50%;
+  background: #ffd69c url(../img/ico--more.svg) no-repeat 50% 50%;
   background-size: 12px 12px;
   border-radius: 50%;
 }
@@ -118,7 +118,7 @@
   margin: 12px;
   padding: 36px;
   padding-top: 128px;
-  background: #f9f9f9;
+  background: #fffbf5;
   border-radius: 36px;
 }
 .footer__info {
@@ -162,7 +162,7 @@
   margin: 6px;
   padding: 36px;
   width: calc(50% - 12px);
-  background: #f9f9f9;
+  background: #fffbf5;
   border-radius: 36px;
   box-sizing: border-box;
 }
@@ -256,24 +256,24 @@
   margin-left: 4px;
   width: 24px;
   height: 24px;
-  background: #f9f9f9 url(../img/ico--more.svg) no-repeat 50% 50%/16px 16px;
+  background: #fffbf5 url(../img/ico--more.svg) no-repeat 50% 50%/16px 16px;
   border-radius: 50%;
   transition: 0.3s;
 }
 .card__list--type01 .card__typeLink:hover {
-  background: #eee;
+  background: #ffd69c;
 }
 .card__list--type01 .card__typeLink:hover::after {
   background-color: #fff;
 }
 .card__list--type01 .card__item:hover .card__header {
-  border-color: #eee;
+  border-color: #ffd69c;
 }
 .card__list--type01 .card__item:hover .card__footer {
-  border-color: #eee;
+  border-color: #ffd69c;
 }
 .card__list--type01 .card__item:hover .card__view {
-  border-color: #eee;
+  border-color: #ffd69c;
 }
 .card__list--type01 .card__item:hover .card__thumbImg {
   transform: scale(1.1);
