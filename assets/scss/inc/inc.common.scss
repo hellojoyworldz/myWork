@@ -63,8 +63,11 @@
     border-radius: 36px;
     box-sizing: border-box;
 
-    &__logo {
+    &__top {
         margin-bottom: 128px;
+    }
+
+    &__logo {
         font-size: $titSizFir;
         color: $fontColFir;
     }

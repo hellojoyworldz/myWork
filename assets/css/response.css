@@ -11,8 +11,10 @@
     margin: 8px;
     padding: 32px;
   }
-  .header__logo {
+  .header__header {
     margin-bottom: 8px;
+  }
+  .header__logo {
     font-size: 32px;
   }
   .header__desc .item {

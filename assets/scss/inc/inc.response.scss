@@ -31,8 +31,11 @@ $lyPadding: 32px;
         margin: $lyMargin;
         padding: $lyPadding;
 
-        &__logo {
+        &__top {
             margin-bottom: $lyMargin;
+        }
+
+        &__logo {
             font-size: $titSizFir;
         }
 
