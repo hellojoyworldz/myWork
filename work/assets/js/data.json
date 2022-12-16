@@ -801,18 +801,6 @@
         "r" : true
     },
 
-   {
-        "name" : "한국암웨이미래재단",
-        "start" : "2019.04",
-        "end" : "2019.06",
-        "urld" : "http://amway.webmaker21.kr/",
-        "url" : "http://amwayfoundation.or.kr",
-        "urlm" : "",
-        "img" : "1904_한국암웨이미래재단.jpg",
-        "pc" : false,
-        "m" : false,
-        "r" : true
-    },
 
 
 
