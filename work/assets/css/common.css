@@ -228,6 +228,9 @@
 }
 .card__list--type01 .card__thumb {
   display: block;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 66.5%;
   overflow: hidden;
 }
 .card__list--type01 .card__thumbImg {

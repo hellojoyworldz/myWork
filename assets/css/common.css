@@ -63,7 +63,7 @@
   border-radius: 36px;
   box-sizing: border-box;
 }
-.header__header {
+.header__top {
   margin-bottom: 128px;
 }
 .header__logo {
@@ -227,7 +227,11 @@
   z-index: -1;
 }
 .card__list--type01 .card__thumb {
+  position: relative;
   display: block;
+  width: 100%;
+  height: 0px;
+  padding-bottom: 66.5%;
   overflow: hidden;
 }
 .card__list--type01 .card__thumbImg {
@@ -235,6 +239,15 @@
   width: 100%;
   height: auto;
   transition: 0.3s;
+}
+.card__list--type01 .card__thumbGif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 200%;
+  background-position: 50% 50%;
 }
 .card__list--type01 .card__type {
   font-size: 0px;
