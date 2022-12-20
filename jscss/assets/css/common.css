@@ -249,6 +249,9 @@
   background-size: 200%;
   background-position: 50% 50%;
 }
+.card__list--type01 .card__desc {
+  font-size: 16px;
+}
 .card__list--type01 .card__type {
   font-size: 0px;
 }

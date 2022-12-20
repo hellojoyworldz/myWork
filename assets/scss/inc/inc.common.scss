@@ -275,6 +275,12 @@
             }
         }
 
+        &__desc {
+            padding: 24px;
+            font-size: $fontSizLv3;
+            background: rgba(255, 255, 255, 0.5);
+        }
+
         &__type {
             font-size: 0px;
             &Link {

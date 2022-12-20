@@ -249,6 +249,11 @@
   background-size: 200%;
   background-position: 50% 50%;
 }
+.card__list--type01 .card__desc {
+  padding: 24px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.5);
+}
 .card__list--type01 .card__type {
   font-size: 0px;
 }

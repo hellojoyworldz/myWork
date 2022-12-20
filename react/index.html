@@ -18,15 +18,15 @@
         </div>
 
         <div class="header__desc">
-            <p class="item">React, Vue, php로 제작한 프로젝트 사이트입니다.</p>
-            <p class="item">Vercel, Netlify, Firebase, 닷홈을 사용하여 프로젝트를 배포하였습니다.</p>
+            <p class="item">React, Vue, PHP로 제작한 프로젝트 사이트입니다.</p>
+            <p class="item">Vercel, Netlify, Firebase, 닷홈을 사용하여 배포하였습니다.</p>
         </div>
         <nav class="gnb">
             <ul class="gnb__list js-filters-group js-button-group">
                 <button type="button" data-filter="*" class="gnb__item active" >All</button>
                 <button type="button" data-filter=".react" class="gnb__item" >React</button>
                 <button type="button" data-filter=".vue" class="gnb__item" >Vue</button>
-                <button type="button" data-filter=".php" class="gnb__item" >php</button>
+                <button type="button" data-filter=".php" class="gnb__item" >PHP</button>
             </ul>
         </nav>
     </header>
@@ -39,13 +39,23 @@
                     <a href="https://subtle-caramel-58a09a.netlify.app" target="_blank">
                         <div class="card__header">
                             <span class="card__cate"><i class="cm-icon cm-icon--react"></i> React</span>
-                            <strong class="card__tit">Indaho</strong>
+                            <strong class="card__tit">Auckland</strong>
                             <span class="card__view">바로가기</span>
                         </div>
-                        <div class="card__body">
-                            <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__react01.jpg" width="1240" height="874" alt=""></span>
-                        </div>
+                        <span class="card__thumb">
+                            <img class="card__thumbImg" src="./assets/img/mainSite__react01.jpg" width="1240" height="874" alt="">
+                        </span>
                     </a>
+                    <div class="card__desc">
+                        첫 번째로 제작한 REACT 사이트입니다.<br/>
+                        섹션 별로 jsx 파일을 만들어 export 한 후 App.js에서 import 하여 받아와 컴포넌트 단위로 사이트를 제작하였습니다. 또한 props를 사용하여 폰트명, 배경색 등을 전달하고 적용시켰습니다.
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__type">
+                            <a href="https://github.com/hellojoyworldz/react_site1/blob/master/src/App.js" target="_blank" class="card__typeLink">Github</a>
+                            <a href="https://subtle-caramel-58a09a.netlify.app" class="card__typeLink" target="_blank">Site</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="card__item js-item react" data-category="react">
                     <a href="https://nimble-marzipan-2527bd.netlify.app" target="_blank">
@@ -54,10 +64,18 @@
                             <strong class="card__tit">Hotels Combined</strong>
                             <span class="card__view">바로가기</span>
                         </div>
-                        <div class="card__body">
-                            <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__react02.jpg" width="1240" height="874" alt=""></span>
-                        </div>
+                        <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__react02.jpg" width="1240" height="874" alt=""></span>
                     </a>
+                    <div class="card__desc">
+                        두 번째로 제작한 REACT 사이트입니다.<br/>
+                        npm을 통해 Swiper를 설치하여 Autoplay와 loop 기능이 추가된 슬라이드를 구현하였고, SCSS를 사용해 스타일링 하였습니다.<br/>
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__type">
+                            <a href="https://nimble-marzipan-2527bd.netlify.app" target="_blank" class="card__typeLink">Github</a>
+                            <a href="https://github.com/hellojoyworldz/react_site2/blob/master/src/App.js" target="_blank" class="card__typeLink">Site</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="card__item js-item react" data-category="react">
                     <a href="https://creative-cheesecake-090cdf.netlify.app" target="_blank">
@@ -66,10 +84,19 @@
                             <strong class="card__tit">API Site</strong>
                             <span class="card__view">바로가기</span>
                         </div>
-                        <div class="card__body">
-                            <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__react03.jpg" width="1240" height="874" alt=""></span>
-                        </div>
+                        <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__react03.jpg" width="1240" height="874" alt=""></span>
                     </a>
+                    <div class="card__desc">
+                        API를 활용한 REACT 사이트입니다.<br/>
+                        TMDB , Youtube , Unsplash API를 활용하여 영화, 영상, 이미지 검색 기능을 제작하였고 BrowserRouter를 사용하여 URL 주소에 따라 다른 화면을 렌더링 해주었습니다.
+
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__type">
+                            <a href="https://github.com/hellojoyworldz/react_site3/blob/master/src/App.js" target="_blank" class="card__typeLink">Github</a>
+                            <a href="https://creative-cheesecake-090cdf.netlify.app" target="_blank" class="card__typeLink">Site</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="card__item js-item react" data-category="react">
                     <a href="https://master-zesty-sherbet-0f5f9d.netlify.app" target="_blank">
@@ -78,10 +105,18 @@
                             <strong class="card__tit">Youtube API</strong>
                             <span class="card__view">바로가기</span>
                         </div>
-                        <div class="card__body">
-                            <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__react04.jpg" width="1240" height="874" alt=""></span>
-                        </div>
+                        <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__react04.jpg" width="1240" height="874" alt=""></span>
                     </a>
+                    <div class="card__desc">
+                        Youtube API를 활용한 REACT 사이트입니다.<br/>
+                        왼쪽 메뉴를 클릭하면 해당 키워드로 검색한 결과를 보여주고, useState와 onChange를 사용하여 input value 값 설정을 해주었습니다.
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__type">
+                            <a href="https://github.com/hellojoyworldz/react_site4/blob/master/src/App.js" target="_blank" class="card__typeLink">Github</a>
+                            <a href="https://master-zesty-sherbet-0f5f9d.netlify.app" target="_blank" class="card__typeLink">Site</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="card__item js-item vue" data-category="vue">
                     <a href="https://myvue-joy.web.app/" target="_blank">
@@ -90,10 +125,18 @@
                             <strong class="card__tit">API Site</strong>
                             <span class="card__view">바로가기</span>
                         </div>
-                        <div class="card__body">
-                            <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__vue03.jpg" width="1240" height="874" alt=""></span>
-                        </div>
+                        <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__vue03.jpg" width="1240" height="874" alt=""></span>
                     </a>
+                    <div class="card__desc">
+                        Vue 사이트 입니다.<br/>
+
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__type">
+                            <a href="" target="_blank" class="card__typeLink">Github</a>
+                            <a href="" target="_blank" class="card__typeLink">Site</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="card__item js-item php" data-category="php">
                     <a href="http://clickb1270.dothome.co.kr/php2/main/main.php" target="_blank">
@@ -102,10 +145,18 @@
                             <strong class="card__tit">php site</strong>
                             <span class="card__view">바로가기</span>
                         </div>
-                        <div class="card__body">
-                            <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__php01.jpg" width="1240" height="874" alt=""></span>
-                        </div>
+                        <span class="card__thumb"><img class="card__thumbImg" src="./assets/img/mainSite__php01.jpg" width="1240" height="874" alt=""></span>
                     </a>
+                    <div class="card__desc">
+                        PHP 사이트 입니다.<br/>
+                        회원가입, 로그인, 게시물 등록, 댓글 작성을 할 수 있는 기능을 제작하였습니다.
+                    </div>
+                    <div class="card__footer">
+                        <div class="card__type">
+                            <a href="" target="_blank" class="card__typeLink">Github</a>
+                            <a href="" target="_blank" class="card__typeLink">Site</a>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </section>

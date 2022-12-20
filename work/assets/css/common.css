@@ -227,6 +227,7 @@
   z-index: -1;
 }
 .card__list--type01 .card__thumb {
+  position: relative;
   display: block;
   width: 100%;
   height: 0px;
@@ -238,6 +239,20 @@
   width: 100%;
   height: auto;
   transition: 0.3s;
+}
+.card__list--type01 .card__thumbGif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 200%;
+  background-position: 50% 50%;
+}
+.card__list--type01 .card__desc {
+  padding: 24px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.5);
 }
 .card__list--type01 .card__type {
   font-size: 0px;
